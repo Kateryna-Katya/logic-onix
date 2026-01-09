@@ -1416,3 +1416,72 @@ body.no-scroll {
         display: none;
     }
 }
+/* --- Legal Pages Styles --- */
+.pages {
+    padding: 150px 0 100px;
+    background: var(--bg-color);
+    min-height: 80vh;
+}
+
+.pages h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 20px;
+}
+
+.pages h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 40px 0 20px;
+}
+
+.pages p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.pages ul,
+.pages ol {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.pages li {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    position: relative;
+}
+
+.pages ul li::before {
+    content: '→';
+    position: absolute;
+    left: -25px;
+    color: var(--primary-color);
+}
+
+.pages strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.pages a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .pages h1 {
+        font-size: 1.7rem;
+    }
+
+    .pages h2 {
+        font-size: 1.5rem;
+    }
+}
